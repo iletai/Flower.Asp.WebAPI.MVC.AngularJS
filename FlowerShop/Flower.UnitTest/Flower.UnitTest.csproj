@@ -53,6 +53,28 @@
     <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Flower.Common\Flower.Common.csproj">
+      <Project>{8f9c2628-ada0-45c7-b250-6b42f27e96cd}</Project>
+      <Name>Flower.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Flower.Data\Flower.Data.csproj">
+      <Project>{c51fbe20-bdab-4960-a716-261b25e8b1cd}</Project>
+      <Name>Flower.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Flower.Model\Flower.Model.csproj">
+      <Project>{669a38fd-9e16-4905-bcb4-ac9619ce5daf}</Project>
+      <Name>Flower.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Flower.Service\Flower.Service.csproj">
+      <Project>{de04d3ff-2321-448f-bfc0-b9aef5df5c24}</Project>
+      <Name>Flower.Service</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Flower.Web\Flower.Web.csproj">
+      <Project>{7bc00dc1-d571-4a48-a8dd-a8fd6841491e}</Project>
+      <Name>Flower.Web</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>
