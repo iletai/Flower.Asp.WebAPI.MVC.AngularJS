@@ -9,6 +9,7 @@ namespace Flower.Model.Models
     public class MenuGroup
     {
         [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int ID
         {
             set; get;

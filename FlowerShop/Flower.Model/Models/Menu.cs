@@ -7,6 +7,7 @@ namespace Flower.Model.Models
     public class Menu
     {
         [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int ID
         {
             set; get;
@@ -36,7 +37,7 @@ namespace Flower.Model.Models
         }
 
         [ForeignKey("GroupID")]
-        public virtual MenuGroup MenuGroups //help point to Menu
+        public virtual MenuGroup MenuGroup //help point to Menu
         {
             set; get;
         }
