@@ -41,6 +41,7 @@ namespace Flower.Model.Models
         {
             set; get;
         }
+
         public string Target
         {
             set; get;
