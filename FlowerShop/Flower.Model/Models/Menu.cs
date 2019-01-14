@@ -42,6 +42,7 @@ namespace Flower.Model.Models
             set; get;
         }
 
+        [MaxLength(10)]
         public string Target
         {
             set; get;

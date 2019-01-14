@@ -9,6 +9,9 @@ namespace Flower.Model.Models
         [Key]
         public int ID { set; get; }
 
+        [Column(TypeName = "varchar")]
+        [MaxLength(256)]
+        [Required]
         public string Code { set; get; }
         public string ValueString { set; get; }
         public int ValueInt { set; get; }

@@ -3,20 +3,20 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Flower.Model.Models
 {
-    [Table("ProductTags")]
-    public class ProductTag
+    [Table("PostTags")]
+    public class PostTags
     {
         [Key]
         public int PostID { set; get; }
 
         [Key]
         [Column(TypeName = "varchar")]
-        [MaxLength(256)]
+        [MaxLength(50)]
         [Required]
         public string TagID { set; get; }
 
-       [ForeignKey("ProductID")]
-       public virtual Product Product { set; get; }
+        [ForeignKey("ProductID")]
+        public virtual Product Product { set; get; }
 
         [ForeignKey("TagID")]
         public virtual Tag Tag { set; get; }

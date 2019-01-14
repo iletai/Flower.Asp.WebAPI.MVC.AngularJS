@@ -7,13 +7,27 @@ namespace Flower.Model.Models
     public class Slide
     {
         [Key]
-        public int ID { set; get; }
 
+        public int ID { set; get; }
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+
+        [Required]
+        [MaxLength(256)]
         public string Name { set; get; }
+
+         
+        [MaxLength(256)]
         public string Description { set; get; }
+
+        
+        [MaxLength(256)]
         public string Image { set; get; }
+
+       
+        [MaxLength(256)]
         public string URL { set; get; }
-        public int DisplayOrder { set; get; }
+
+        public int? DisplayOrder { set; get; }
         public bool Status { set; get; }
     }
 }
