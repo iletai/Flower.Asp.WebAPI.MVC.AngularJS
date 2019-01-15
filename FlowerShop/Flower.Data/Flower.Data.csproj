@@ -49,6 +49,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FlowerDbContext.cs" />
+    <Compile Include="Infrastructure\Dispoable.cs" />
+    <Compile Include="Infrastructure\IDbFactory.cs" />
+    <Compile Include="Infrastructure\IRepository.cs" />
+    <Compile Include="Infrastructure\IUnitOfWork.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -60,9 +65,12 @@
       <Project>{8f9c2628-ada0-45c7-b250-6b42f27e96cd}</Project>
       <Name>Flower.Common</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Flower.Model\Flower.Model.csproj">
+      <Project>{669a38fd-9e16-4905-bcb4-ac9619ce5daf}</Project>
+      <Name>Flower.Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Infrastructure\" />
     <Folder Include="Repositories\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace Flower.Model.Models
 {
     [Table("OrderDetails")]
-   public  class OrderDetails
+   public  class OrderDetail
     {
         [Key]
         public int OrderID { set; get; }
