@@ -10,7 +10,10 @@ namespace Flower.Model.Models
         [Key]
         public int ID { set; get; }
 
+        [Required]
         public DateTime VistedDate { set; get; }
+
+        [MaxLength(50)]
         public string IPAdress { set; get; }
     }
 }

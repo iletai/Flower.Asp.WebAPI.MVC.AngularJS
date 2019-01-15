@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace Flower.Model.Models
 {
     [Table("PostTags")]
-    public class PostTags
+    public class PostTag
     {
         [Key]
         public int PostID { set; get; }
